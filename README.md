@@ -1,5 +1,7 @@
 # Login information Script on Rocky Linux
 
+<img src="Login-info-RockyLinu.JPG">
+
 1. Copy `login-info.sh` file in `/etc/profile.d`
 
 2. Set `755` or `777` permission to `login-info.sh`
