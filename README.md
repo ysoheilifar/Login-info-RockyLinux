@@ -4,12 +4,12 @@
 <img src="Login-info-RockyLinux.jpg">
 </p>
 
-1. Copy `login-info.sh` file in `/etc/profile.d`
+1. Copy `Login-info-RockyLinux.sh` file in `/etc/profile.d`
 
 2. Set `755` or `777` permission to `login-info.sh`
 ```bash script
 cd /etc/profile.d
-chmod 755 login-info.sh
+chmod 755 Login-info-RockyLinux.sh
 
 ```
 3. Logout and login again then enjoy the information :ok_hand:
