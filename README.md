@@ -1,6 +1,6 @@
 # Login information Script on Rocky Linux
 
-<img align="left" src="Login-info-RockyLinux.jpg">
+<img align="center" src="Login-info-RockyLinux.jpg">
 
 1. Copy `login-info.sh` file in `/etc/profile.d`
 
