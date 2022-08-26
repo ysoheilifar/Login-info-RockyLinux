@@ -5,7 +5,7 @@
 2. Set `755` or `777` permission to `login-info.sh`
 ```bash script
 cd /etc/profile.d
-cdmod 755 login-info.sh
+chmod 755 login-info.sh
 
 ```
 3. Logout and login again then enjoy the information
