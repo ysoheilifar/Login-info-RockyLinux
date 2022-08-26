@@ -34,7 +34,7 @@ mem_gauge=$(echo "[$mem_used_gauge>$mem_free_gauge] $memory_usage")
 # find IP Address
 MSJ_NO_IP_DHCP="If you could not get a DHCP IP address please type setup and select \"Network configuration\" to set up a static IP."
 INTFCNET=`ls -A /sys/class/net/`
-cont=0
+count=0
 for x in $INTFCNET
 do
         case $x in
@@ -51,10 +51,10 @@ do
                 # ww* for wireless wan interfaces
                 # sl* for lineal serial interfaces
                 eth*|en*|ww*|wl*|sl*)
-                        IPADDR[$cont]=`LANG=C /usr/sbin/ip addr show dev $x | perl -ne 'print "$1\n" if /inet (\d+\.\d+.\d+.\d+)/;'`
+                        IPADDR[$count]=`LANG=C /usr/sbin/ip addr show dev $x | perl -ne 'print "$1\n" if /inet (\d+\.\d+.\d+.\d+)/;'`
                 ;;
         esac
-        let "cont++"
+        let "count++"
 done
 if [ "$IPADDR[@]" = "" ]; then
    echo "<YOUR-IP(s)-HERE>"
