@@ -12,4 +12,4 @@ cd /etc/profile.d
 chmod 755 login-info.sh
 
 ```
-3. Logout and login again then enjoy the information
+3. Logout and login again then enjoy the information :ok_hand:
