@@ -6,7 +6,7 @@
 
 1. Copy `Login-info-RockyLinux.sh` file in `/etc/profile.d`
 
-2. Set `755` or `777` permission to `login-info.sh`
+2. Set `755` or `777` permission to `Login-info-RockyLinux.sh`
 ```bash script
 cd /etc/profile.d
 chmod 755 Login-info-RockyLinux.sh
